@@ -197,3 +197,4 @@ Every parameter carries a source tag in the dashboard tab "Assumptions and valid
 
 Validate the thermal model on a 3-cell group at low current with thermocouples, fit the convection coefficients and the cell specific heat, then extend to the full module.
 # teleport_BTMS
+# teleport_BTMS
