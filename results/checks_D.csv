@@ -1,0 +1,24 @@
+ID,Type,Check,Value,Limit,Unit,Status,Why it matters
+L1,Datasheet,Peak cell temperature while charging,37.8,45,C,PASS,DS 5.1: charge only between 0 and 45 C
+L2,Datasheet,Peak cell temperature while discharging,38.8,60,C,PASS,DS 5.1: discharge between -20 and 60 C
+L3,Datasheet,Peak cell discharge current vs limit at its temperature,69,100,% of limit,PASS,"DS 2.9: 1.5C from 5 to 60 C, 0.3C from -20 to 5 C. Mismatch makes one cell carry more than its share"
+L4,Datasheet,Peak cell charge current vs limit at its temperature,89,100,% of limit,PASS,"DS 2.6: 0.7C from 25 to 45 C, 0.3C from 0 to 25 C. Charging at the limit leaves no room for cell spread"
+E1,Electrochemical,Peak cell charge current vs plating-free current at its SOC (cells >= 25 C),88,100,% of limit,PASS,"Chen2020 DFN at 25 C: negative-electrode potential vs lithium stays >= 0 V. Screening criterion, not a plating measurement. No charge time below 25 C"
+L5,Datasheet,Lowest group voltage,2.72,2.5,V,PASS,DS 2.7: 2.5 V discharge cut-off
+L6,Datasheet,Ambient inside the charge window,35,0 to 45,C,PASS,DS 5.1: no charging below 0 C or above 45 C
+R1,Requirement,Peak cell temperature,38.8,45,C,PASS,45 C is the top of the datasheet charge window: above it the BMS blocks charging until the module cools
+R2,Requirement,Usable energy,198.9,190,Wh,PASS,Net of fan energy
+R3,Requirement,Charge time,106,120,min,PASS,Includes the CV tail and any BMS pauses
+R4,Requirement,Mass,1592,1100,g,FAIL,
+R5,Requirement,Estimated cost,8116,8000,INR,FAIL,"Placeholder prices, replace with quotes"
+R6,Requirement,Volume,728,600,cm3,FAIL,Cell block plus plate and fan
+R8,Requirement,Smallest gap between cells,1.5,1,mm,PASS,Design rule. DS 5.1 asks for insulation between cells and metal parts; the datasheet gives no spacing
+R7,Requirement,Module voltage range fits the load and charger window,10.0 to 16.8,10 to 16.8,V,PASS,Series count sets the voltage window
+I1,Interface,Charger current per cell vs cell limit at ambient temperature,2.91,3.4,A,PASS,Charger and cell must agree on the current. A cold cell accepts only 0.3C
+I2,Interface,BMS trip level vs temperature requirement,"trip 60 (discharge), 45 (charge)",req 45,C,PASS,"The discharge trip sits 15 K above the requirement, so a miss raises no alarm during discharge. Add a warning level or derate current near the requirement"
+I3,Interface,BMS sensor under-reads the hottest cell,0.1,2,K,PASS,"Sensor on corner cell. Hotspot is cell 8. The 45 C charge cut-off acts on the sensor reading, not on the hottest cell"
+I4,Interface,Fan and pump power as a share of module power,2.96,2,%,FAIL,Parasitic load lowers usable energy
+LQ1,Liquid loop,Coolant temperature rise across the cold plate,0.08,5,K,PASS,"Flow adequacy: Q = m cp (T_out - T_in). A large rise means too little flow for the heat load. 5 K is a common design guideline, not a datasheet value"
+LQ2,Liquid loop,Radiator capacity at the requirement temperature vs mean heat load,856,100,% of load,PASS,"G_rad (T_req - T_amb) = 76.9 W against 9.0 W of cell, bus and pump heat. The coolant cannot go below ambient without refrigeration, so this falls to zero when ambient reaches the requirement"
+LQ3,Liquid loop,Hottest cell minus coolant temperature,2.4,10,K,PASS,"Share of the temperature budget used by the pad, plate and plate-to-coolant resistance. 10 K is a guideline"
+LQ4,Liquid loop,Cell-to-plate pad is an electrical insulator,yes,yes,-,PASS,"Design rule, cannot be verified by simulation. Series groups sit at different potentials (up to 16.8 V), so a conductive pad would short them through the aluminium plate"

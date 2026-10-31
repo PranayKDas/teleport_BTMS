@@ -1,0 +1,13 @@
+Test,Condition,Datasheet or chart,Model,Difference,Source,Note
+"Energy at 0.2C, 25 C",0.97 A to 2.5 V,"17.6 Wh min, 18.2 Wh nominal",17.8 Wh,-0.4 Wh vs nominal,"DS 2.1, 4.3.3","independent: OCV from the electrochemical model, R from DS"
+Mean discharge voltage at 0.2C,0.97 A to 2.5 V,3.63 V,3.68 V,+0.05 V,DS 2.2,independent
+"DC resistance, 0.5C pulse","30 s, 25 C, 50 % SOC",30 +/- 6 mOhm,31.4 mOhm,+1.4 mOhm,DS 4.3.2,"input reproduced, not independent"
+"DC resistance, 0.5C pulse","0.5 s, 25 C, 50 % SOC",21 to 25 mOhm (3 cells),24.9 mOhm,top of range,BD chart,"independent: R0 is fitted to the electrochemical model, not to these points"
+Resistance ratio to 25 C,10 C,2.96 (chart means),2.96,+0.00,BD chart,"input reproduced, not independent. Chart read by eye"
+Resistance ratio to 25 C,45 C,0.61 (chart means),0.61,+0.00,BD chart,"input reproduced, not independent. Chart read by eye"
+"Energy vs 25 C, resistance only","0 C, 0.2C",80 %,94 %,+14 points,DS 4.4.4,"independent: resistance alone does not explain the loss, so the datasheet table is added"
+"Energy vs 25 C, with DS table","0 C, 0.2C",80 %,79 %,-1 points,DS 4.4.4,"input reproduced, not independent"
+"Energy vs 25 C, resistance only","-10 C, 0.2C",70 %,86 %,+16 points,DS 4.4.4,"independent: resistance alone does not explain the loss, so the datasheet table is added"
+"Energy vs 25 C, with DS table","-10 C, 0.2C",70 %,65 %,-5 points,DS 4.4.4,"input reproduced, not independent"
+"Energy vs 25 C, resistance only","60 C, 0.2C",95 %,100 %,+5 points,DS 4.4.4,"independent: resistance alone does not explain the loss, so the datasheet table is added"
+"Energy vs 25 C, with DS table","60 C, 0.2C",95 %,97 %,+2 points,DS 4.4.4,"input reproduced, not independent"

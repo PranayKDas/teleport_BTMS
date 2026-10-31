@@ -1,0 +1,11 @@
+Requirement,Component,Assumption,Model,Result,Validation or source
+R1 Peak cell temperature,LG INR21700-M50; 1.5 mm cell gap,"h = 10 W/m2K (natural), cell cp 900 J/kgK, 5 % resistance spread","I2R0 + V1^2/R1 heat per cell, 12-node thermal network",57.3 C vs 45 (FAIL),"R(T) from the BD chart, 30 mOhm from DS 4.3.2; no M50 thermal data in the sources, so a bench test is the next step"
+R2 Usable energy,4S3P of LG INR21700-M50,"OCV curve from the Chen2020 electrochemical model, R0 + R1 = 30 mOhm at 30 s (DS 4.3.2)","SOC integration to 2.5 V cut-off, DS energy retention vs temperature",202.3 Wh vs 190 (PASS),17.8 Wh at 0.2C vs 17.6 min and 18.2 nominal (DS 2.1). Energy at 1C is 2 to 3 points above the electrochemical model
+R3 Charge time,"Charger CC-CV, BMS",End current C/20 (DS 4.2.3); polarisation branch fitted to the electrochemical model,CC-CV with BMS temperature pauses,136 min vs 120 (FAIL),"No charge-time data in the datasheet. 10 to 16 % shorter than the electrochemical model at 25 C, so treat it as a lower bound"
+R4 Mass,"Cells, holders, strip, BMS, plate, pads, fan","Holder 2 g, strip 10 g + 4 g per series group, BMS 12 g",Sum of parts,878 g vs 1100 (PASS),DS 2.10 cell mass; other masses are estimates to be weighed
+R5 Cost,Same parts list,"Cell INR 450 placeholder, BMS INR 200 + 75 per series group",Sum of parts,6226 INR vs 8000 (PASS),Replace with supplier quotes
+R6 Volume,"Cell block, plate, fan",Cells on a square grid at the stated gap,Bounding box,430 cm3 vs 600 (PASS),Check against CAD
+R8 Cell gap,Cell holder,"Design rule, 1 mm minimum",Direct comparison,1.5 mm vs 1 (PASS),"DS 5.1 asks for insulation, no spacing given"
+R7 Voltage window,4 series groups,"Nominal 3.63 V, 2.5 to 4.2 V per cell (DS 2.2, 2.5, 2.7)",Series count x cell limits,10.0 to 16.8 V vs 10 to 16.8 (PASS),Datasheet values
+L1 to L5 Cell limits,BMS,"Datasheet limits used as BMS trip levels (DS 2.6, 2.9, 2.7, 5.1)",Limit checks on every time step,1 fail,Datasheet
+I1 to I4 Interfaces,"Charger, BMS, sensor, fan",Sensor on a corner cell,Cross-subsystem checks,2 fail,Model comparison with hotspot

@@ -1,0 +1,15 @@
+Test,Condition,Reference (DFN),Equivalent circuit (R = 30 mOhm),Difference,Equivalent circuit (R = DFN value),Type
+"DC resistance, 0.5C, 30 s, 50 % SOC",25 C,38.4 mOhm,31.4 mOhm,-7.0 mOhm,-,DFN is above the datasheet 30 +/- 6 mOhm; circuit is set to the datasheet
+"DC resistance, 0.5C, 0.5 s, 50 % SOC",25 C,27.1 mOhm,24.9 mOhm,-2.2 mOhm,-,measured cells: 21 to 25 mOhm (BD chart)
+Capacity vs 0.2C,"0.2C, 25 C",100.0 %,100.0 %,+0.0,100.0 %,independent
+Energy vs 0.2C,"0.2C, 25 C",100.0 %,100.0 %,+0.0,100.0 %,independent
+Capacity vs 0.2C,"0.5C, 25 C",99.1 %,99.7 %,+0.6,99.6 %,independent
+Energy vs 0.2C,"0.5C, 25 C",97.2 %,98.3 %,+1.1,97.9 %,independent
+Capacity vs 0.2C,"1.0C, 25 C",97.5 %,99.2 %,+1.7,99.0 %,independent
+Energy vs 0.2C,"1.0C, 25 C",93.1 %,95.4 %,+2.4,94.4 %,independent
+Capacity vs 0.2C,"1.5C, 25 C",95.8 %,98.7 %,+2.9,98.3 %,independent
+Energy vs 0.2C,"1.5C, 25 C",88.9 %,92.6 %,+3.7,90.9 %,independent
+"Charge time to end current, in C-hours","0.3C CC-CV, 25 C",1.221 h x C,1.056 h x C,-14 %,1.075 h x C (-12 %),"independent, 50 mA end current"
+"Charge time to end current, in C-hours","0.5C CC-CV, 25 C",1.200 h x C,1.076 h x C,-10 %,1.101 h x C (-8 %),independent
+"Charge time to end current, in C-hours","0.6C CC-CV, 25 C",1.277 h x C,1.110 h x C,-13 %,1.149 h x C (-10 %),independent
+"Charge time to end current, in C-hours","0.7C CC-CV, 25 C",1.364 h x C,1.150 h x C,-16 %,1.204 h x C (-12 %),"independent, C/20 end current"

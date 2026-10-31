@@ -1,0 +1,5 @@
+Design,Datasheet fails,Requirement fails,Interface fails,Electrochemical fails,Liquid-loop fails,Score,Acceptable
+"C  Fan, wide gaps",0,0,0,0,0,0.89,True
+B  Spreader plate,0,1,1,0,0,0.789,False
+D  Liquid cold plate,0,3,1,0,0,0.44,False
+A  Baseline,1,2,2,0,0,0.5,False

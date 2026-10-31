@@ -1,0 +1,5 @@
+,usable_energy_wh,peak_cell_temp_c,temp_spread_k,charge_time_min,discharge_time_min,mass_g,cost_inr,volume_cm3,energy_density_wh_kg,energy_density_wh_l,round_trip_eff,peak_cell_current_dis_a,sensor_underread_k,fan_power_w,peak_plating_ratio,avg_cell_temp_c,aux_energy_wh,pump_energy_wh,rad_fan_energy_wh,air_fan_energy_wh,coolant_peak_c,coolant_above_ambient_max_k,coolant_rise_max_k,peak_radiator_w,heat_radiator_wh,heat_air_wh
+A  Baseline,202.25,57.35,4.67,136.5,57.58,878.0,6226.0,429.96,230.36,470.41,0.95,5.06,4.67,0.0,0.88,44.85,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,22.49
+B  Spreader plate,203.58,47.72,0.21,103.67,58.08,951.5,6586.25,467.46,213.96,435.5,0.95,5.04,0.21,0.0,0.88,42.07,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,23.89
+"C  Fan, wide gaps",203.92,41.78,0.82,105.25,58.67,890.0,6376.0,550.34,229.13,370.54,0.94,5.05,0.77,0.8,0.88,38.49,4.9,0.0,0.0,4.9,,0.0,0.0,0.0,0.0,26.31
+D  Liquid cold plate,198.9,38.85,0.12,105.75,58.83,1591.75,8116.0,727.96,124.95,273.23,0.94,5.05,0.1,6.0,0.88,37.3,32.91,21.94,10.97,0.0,36.46,1.46,0.08,11.24,43.72,5.25

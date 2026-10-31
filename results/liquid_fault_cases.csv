@@ -1,0 +1,7 @@
+Fault,Peak cell (C),Mean cell (C),Minutes above requirement,BMS blocked time (min),Discharge time (min),Coolant rise across plate (K),Result
+Healthy loop,38.8,37.3,0.0,0.0,58.8,0.08,within the requirement
+Flow reduced to 50 %,38.8,37.3,0.0,0.0,58.8,0.17,within the requirement
+Flow reduced to 25 %,38.8,37.3,0.0,0.0,58.8,0.33,within the requirement
+Radiator fan failed,41.7,39.3,0.0,0.0,58.7,0.06,within the requirement
+Pump stops at 10 min,51.6,43.0,105.0,58.0,57.8,0.06,"above the 45 C charge limit, BMS blocks charging"
+No flow from the start,51.6,43.2,111.0,59.0,57.8,0.0,"above the 45 C charge limit, BMS blocks charging"

@@ -1,0 +1,3 @@
+# Optional. The offline electrochemical tools in tools/ and the live DFN replay in the dashboard need these. The dashboard, report and tests run without them.
+pybamm>=25.1
+scipy>=1.11

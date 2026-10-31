@@ -1,0 +1,26 @@
+Factor,Level,A peak (C),B peak (C),C peak (C),D peak (C),Best design,Order
+Base case,-,57.4,47.7,41.8,38.8,C,C > B > D > A
+"Natural convection h, +/- 30 %",7,61.1,51.6,42.5,39.0,C,C > D > B > A
+"Natural convection h, +/- 30 %",13 W/m2K,54.0,45.3,41.2,38.7,C,C > B > D > A
+"Gap exposure length, 2 / 4.5 mm",2,54.3,46.8,41.1,38.8,C,C > B > D > A
+"Gap exposure length, 2 / 4.5 mm",4.5 mm,60.7,48.6,43.2,38.9,C,C > B > D > A
+"Forced convection coefficient, +/- 30 %",-30 %,57.4,47.7,43.1,38.8,C,C > B > D > A
+"Forced convection coefficient, +/- 30 %",+30 %,57.4,47.7,40.8,38.8,C,C > B > D > A
+"Cell specific heat, 800 / 1100",800,58.2,47.9,41.8,38.8,C,C > B > D > A
+"Cell specific heat, 800 / 1100",1100 J/kgK,55.9,47.3,41.8,38.8,C,C > B > D > A
+"Cell resistance, +/- 20 % (DS tolerance)",-20 %,53.6,45.6,40.7,38.3,C,C > B > D > A
+"Cell resistance, +/- 20 % (DS tolerance)",+20 %,61.1,49.9,42.8,39.4,C,C > B > D > A
+"Resistance spread, 0 / 10 %",0 %,57.7,47.8,42.0,38.8,C,C > B > D > A
+"Resistance spread, 0 / 10 %",10 %,57.0,47.6,42.0,38.9,C,C > B > D > A
+"Ambient temperature, 30 / 40 C",30 C,53.0,43.5,37.5,34.2,C,C > B > D > A
+"Ambient temperature, 30 / 40 C",40 C,60.6,52.4,46.3,43.5,C,C > D > B > A
+"Thermal pad conductivity, 1.0 / 2.5",1.0,57.4,47.8,41.8,39.3,C,C > B > D > A
+"Thermal pad conductivity, 1.0 / 2.5",2.5 W/mK,57.4,47.6,41.8,38.4,C,C > B > D > A
+"Radiator UA, +/- 30 %",-30 %,57.4,47.7,41.8,39.3,C,C > B > D > A
+"Radiator UA, +/- 30 %",+30 %,57.4,47.7,41.8,38.6,C,C > B > D > A
+"Plate-to-coolant UA, +/- 30 %",-30 %,57.4,47.7,41.8,39.2,C,C > B > D > A
+"Plate-to-coolant UA, +/- 30 %",+30 %,57.4,47.7,41.8,38.6,C,C > B > D > A
+"Coolant flow, 50 / 150 %",50 %,57.4,47.7,41.8,38.8,C,C > B > D > A
+"Coolant flow, 50 / 150 %",150 %,57.4,47.7,41.8,38.9,C,C > B > D > A
+"Liquid loop hardware cost, 50 / 200 %",50 %,57.4,47.7,41.8,38.8,C,C > B > D > A
+"Liquid loop hardware cost, 50 / 200 %",200 %,57.4,47.7,41.8,38.8,C,C > B > D > A
